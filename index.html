@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My math game | by Muhammadqodir</title>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+
+    <body>
+        <div class="container">
+            <nav>
+                <div class="nav-top flex space-between">
+                    <span>Operations</span>
+                    <span>Digit room</span>
+                </div>
+                <div class="nav-main flex space-between">
+                    <div class="operations">
+                        <button class="selected" id="plus">+</button>
+                        <button id="minus">-</button>
+                        <button id="increase">*</button>
+                    </div>
+                    <div class="digit-rooms">
+                        <button class="selected" id="room1">1</button>
+                        <button id="room2">2</button>
+                        <button id="room3">3</button>
+                    </div>
+                </div>
+            </nav>
+            <main>
+                <div class="main-top">
+                    <h2>Find the <span id="operation">sum</span> of <span id="x" class="colored">X</span> and <span
+                            id="y" class="colored">Y</span></h2>
+                    <div id="statistics" class="flex align-center space-between">
+                        <div id="scoreboard" class="flex align-center">
+                            <img src="./person.png" alt="person icon">
+                            <span id="player-points">0</span>
+                            <span>:</span>
+                            <span id="compyuter-points">0</span>
+                            <img src="./computer.png" alt="compyuter icon">
+                        </div>
+                        <div id="timer">00:0</div>
+                    </div>
+                </div>
+                <div class="answer-variants">
+                    <div id="answer-variant1">564</div>
+                    <div id="answer-variant2">589</div>
+                    <div id="answer-variant3">489</div>
+                    <div id="answer-variant4">586</div>
+                </div>
+                <div id="level-selections" class="level-selection flex space-between">
+                    <button class="selected" id="easy">Easy</button>
+                    <button id="medium">Medium</button>
+                    <button id="hard">Hard</button>
+                </div>
+            </main>
+            <footer>
+                <div class="buttuns flex ">
+                    <button id="startBtn" class="hoverEffect" href="#"><span class="spans">Start</span><i></i></button>
+                    <button id="reStartBtn" class="hoverEffect" href="#"><span
+                            class="spans">Restart</span><i></i></button>
+                </div>
+                <div class="writen-text-container">
+                    <div class="wrapper">
+                        <ul class="dynamic-txts">
+                            <li><span>O'yin hisob 10 ga yetguncha qani kim yutarkin!</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <script src="./script.js"></script>
+    </body>
+
+</html>
